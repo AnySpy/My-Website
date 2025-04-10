@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <div class="cards">
+        <article class="card">
+            <header>
+                Sam Young
+            </header>
+            <div class="content">
+                Level <span id="age"></span> Human Computer Scientist
+            </div>
+        </article>
+    </div>
+</html>
+
+<script>
+    window.onload = function() {
+
+        const age = document.getElementById("age");
+        if (age) {
+            const birthday = new Date ("March 13, 2004 00:00:00");
+            const date = new Date();
+
+            if (date.getMonth() < birthday.getMonth() || (date.getMonth() == birthday.getMonth() && date.getDate() < birthday.getDate())) {
+                age.textContent = (date.getFullYear() - 2005).toString();
+            } else if (date.getMonth() == birthday.getMonth() && date.getDate() >= birthday.getDate()) {
+                age.textContent = (date.getFullYear() - 2004).toString();
+            } else {
+                age.textContent = (date.getFullYear() - 2004).toString();
+            }
+        }
+    }
+</script>
