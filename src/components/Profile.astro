@@ -2,15 +2,31 @@
 <html>
     <div class="cards">
         <article class="card">
-            <header>
-                Sam Young
+            <header class="name">
+                <span>Sam Young</span>
             </header>
             <div class="content">
-                Level <span id="age"></span> Human Computer Scientist
+                Level <span id="age"></span> Goat Computer Scientist
             </div>
         </article>
     </div>
 </html>
+
+<style>
+    .name {
+        display: flex;
+        background-image: url('/My-Website//name.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+        height: 50px;
+        color: white;
+    }
+    .name span {
+        font-size: 15px;
+        padding-top: 12px;
+        padding-left: 245px;
+    }
+</style>
 
 <script>
     window.onload = function() {
