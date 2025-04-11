@@ -2,29 +2,39 @@
 <html>
     <div class="cards">
         <article class="card">
-            <header class="name">
+            <div class="name">
                 <span>Sam Young</span>
-            </header>
-            <div class="content">
-                Level <span id="age"></span> Goat Computer Scientist
+            </div>
+            <div class="info">
+                Level <span id="age"></span><span id="class"> Goat Computer Scientist</span>
             </div>
         </article>
     </div>
 </html>
 
 <style>
-    .name {
-        display: flex;
-        background-image: url('/My-Website//name.png');
+    html {
+        background-color: black;
+    }
+    .card {
+        position: relative;
+        background-image: url('/My-Website//CharacterSheet.png');
         background-size: contain;
         background-repeat: no-repeat;
-        height: 50px;
+        height: 750px;
         color: white;
     }
-    .name span {
+    .name {
+        position: absolute;
         font-size: 15px;
-        padding-top: 12px;
-        padding-left: 245px;
+        top: 22px;
+        left: 245px;
+    }
+    .info {
+        position: absolute;
+        font-size: 15px;
+        top: 66px;
+        left: 200px;
     }
 </style>
 
