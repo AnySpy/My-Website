@@ -1,23 +1,25 @@
 <!DOCTYPE html>
 <html>
-    <div class="cards">
-        <article class="card">
-            <div class="name">
-                <span>Sam Young</span>
-            </div>
-            <div class="info">
-                Level <span id="age"></span><span id="class"> Goat Computer Scientist</span>
-            </div>
-            <div class="fursona">
-                <!-- Placeholder, need a better fit image :P -->
-                <img src='/My-Website//Fursona.png'/>
-            </div>
-            <div>
-                <a href="/My-Website/Home">
-                    <button class="character-page" type="button"></button>
-                </a>
-            </div>
-        </article>
+    <div class="card">
+        <div>
+            <img class = "class-image" src='/My-Website//coder.png' alt = "A computer screen with some code on it"/>
+        </div>
+        <div class="name">
+            <span>Sam Young</span>
+        </div>
+        <div class="info">
+            Level <span id="age"></span><span id="class"> Goat Computer Scientist</span>
+        </div>
+        <div class="fursona-container">
+            <!-- Placeholder, need a better fit image :P -->
+             <!-- Maybe look into Astro's 'Image' component -->
+            <img class="fursona" src='/My-Website//Fursona.png' alt="A ram-goat hybrid with a background of a red valley"/>
+        </div>
+        <div>
+            <a href="/My-Website/Home">
+                <button class="character-page" type="button"></button>
+            </a>
+        </div>
     </div>
 </html>
 
@@ -33,23 +35,39 @@
         height: 750px;
         color: white;
     }
+    .class-image {
+        position: absolute;
+        height: 87px;
+        width: 87px;
+        left: 12px;
+        top: 10px;
+        border-radius: 95%;
+    }
     .name {
         position: absolute;
         font-size: 15px;
         top: 22px;
-        left: 245px;
+        left: 260px;
     }
     .info {
         position: absolute;
         font-size: 15px;
-        top: 66px;
-        left: 200px;
+        top: 70px;
+        left: 180px;
         color: #ffd100;
     }
-    .fursona {
+    .fursona-container {
         position: absolute;
-        top: 145px;
+        top: 130px;
         left: 105px;
+        width: 360px;
+        height: 500px;
+    }
+    .fursona {
+        object-fit: cover;
+        object-position: 35% center;
+        width: 100%;
+        height: 100%;
     }
     .character-page {
         position: absolute;
