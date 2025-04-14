@@ -15,11 +15,6 @@
              <!-- Maybe look into Astro's 'Image' component -->
             <img class="fursona" src='/My-Website//Fursona.png' alt="A ram-goat hybrid with a background of a red valley"/>
         </div>
-        <div>
-            <a href="/My-Website/Home">
-                <button class="character-page" type="button"></button>
-            </a>
-        </div>
     </div>
 </html>
 
@@ -32,51 +27,45 @@
         background-image: url('/My-Website//CharacterSheet.png');
         background-size: contain;
         background-repeat: no-repeat;
-        height: 750px;
+        width: 100%;
+        aspect-ratio: 250 / 337;
+        max-width: 500px;
+        margin: 0 auto;
         color: white;
     }
     .class-image {
         position: absolute;
-        height: 87px;
-        width: 87px;
-        left: 12px;
-        top: 10px;
+        width: 15.5%;
+        height: 11.5%;
+        left: 2.39%;
+        top: 1.48%;
         border-radius: 95%;
     }
     .name {
         position: absolute;
         font-size: 15px;
-        top: 22px;
-        left: 260px;
+        top: 3%;
+        left: 47%;
     }
     .info {
         position: absolute;
         font-size: 15px;
-        top: 70px;
-        left: 180px;
+        top: 10%;
+        left: 33%;
         color: #ffd100;
     }
     .fursona-container {
         position: absolute;
-        top: 130px;
-        left: 105px;
-        width: 360px;
-        height: 500px;
+        top: 17%;
+        left: 18.5%;
+        width: 65.5%;
+        height: 68%;
     }
     .fursona {
         object-fit: cover;
         object-position: 35% center;
         width: 100%;
         height: 100%;
-    }
-    .character-page {
-        position: absolute;
-        background-color: transparent;
-        border: transparent;
-        top: 700px;
-        left: 55px;
-        height: 45px;
-        width: 105px;
     }
 </style>
 
