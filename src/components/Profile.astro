@@ -4,11 +4,13 @@
         <div>
             <img class = "class-image" src='/My-Website//coder.png' alt = "A computer screen with some code on it"/>
         </div>
-        <div class="name">
-            <span>Sam Young</span>
-        </div>
-        <div class="info">
-            Level <span id="age"></span><span id="class"> Goat Computer Scientist</span>
+        <div class="text-container">
+            <div class="name">
+                <span>Sam Young</span>
+            </div>
+            <div class="info">
+                Level <span id="age"></span><span id="class"> Goat Computer Scientist</span>
+            </div>
         </div>
         <div class="fursona-container">
             <!-- Placeholder, need a better fit image :P -->
@@ -41,17 +43,26 @@
         top: 1.48%;
         border-radius: 95%;
     }
-    .name {
+    .text-container {
         position: absolute;
-        font-size: 1em;
+        width: 73%;
+        height: 10%;
+        left: 20%;
         top: 3%;
-        left: 47%;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .name {
+        font-size: clamp(14px, 2vw, 18px);
+        word-break: break-word;
+        white-space: normal;
     }
     .info {
-        position: absolute;
-        font-size: 1em;
-        top: 10%;
-        left: 33%;
+        font-size: clamp(14px, 2vw, 18px);
+        white-space: normal;
+        word-break: break-word;
         color: #ffd100;
     }
     .fursona-container {
